@@ -1,0 +1,139 @@
+/* Basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container for the contact form */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px; /* Ensure a maximum width for larger screens */
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Styling for the left side of the container */
+.left-side {
+    flex: 3; /* Take up more space */
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center form vertically */
+}
+
+/* Styling for the right side of the container */
+.right-side {
+    flex: 2; /* Take up less space */
+    padding-left: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Header styling */
+.header {
+    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 10px; /* Added margin for spacing */
+}
+
+/* Sub-header styling */
+.sub-header {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%; /* Full width of the form element */
+     /* Adjusted max-width */
+    padding: 12px;
+    border: 1px solid #d3e3d4;/* Green border */
+    border-radius: 12px; /* Rounded corners */
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    background-color: #c8dcca; /* Light green background */
+    color: #333; /* Dark text color for contrast */
+}
+
+/* Increased textarea height */
+.contact-form textarea {
+    height: 100px; /* Increased height for better usability */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Submit button styling */
+.contact-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 12px; /* Rounded corners */
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%; /* Full-width submit button */
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Contact info section styling */
+.contact-info {
+    margin-top: 20px;
+}
+
+/* Social icons section styling */
+.social-icons {
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Image styling */
+.illustration {
+    width: 100%; /* Full width of the right-side container */
+    height: auto;
+     /* Adjusted max width for the image */
+    height: 300px; /* Fixed height for the image */
+    margin-bottom: 0; /* Removed the negative margin */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack left and right side vertically on small screens */
+    }
+
+    .left-side, .right-side {
+        padding: 0;
+        text-align: center;
+    }
+
+    .illustration {
+        width: 100%; /* Full width on smaller screens */
+        max-width: none; /* Remove the max-width restriction */
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        max-width: 100%; /* Ensure the form fields use full width */
+    }
+}
