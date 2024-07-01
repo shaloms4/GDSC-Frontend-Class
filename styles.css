@@ -114,7 +114,7 @@ body::before {
 }
 
 .illustration {
-    width: 100%; 
+    width: auto; 
     height: auto;
     height: 300px; 
     margin-bottom: -30px; 
@@ -123,16 +123,13 @@ body::before {
 @media (max-width: 768px) {
     .container {
         flex-direction: column; 
+        margin-top: 40px; 
+        margin-bottom: 40px; 
     }
 
     .left-side, .right-side {
         padding: 0;
         text-align: center;
-    }
-
-    .illustration {
-        width: 100%; 
-        max-width: none; 
     }
 
     .contact-form input[type="text"],
