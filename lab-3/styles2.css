@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+footer, header{
+    text-align: center;
+    color: orange;
+    background-color: green;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.paragraph-container p{
+    margin: 2%;
+}
+.image1{
+    width: 310px;
+    height: 309px;
+    background-image: url(../lab-2/puppy-image/puppy-1.jpg);
+    margin: 2% auto;
+}
+.image2{
+    width: 310px;
+    height: 309px;
+    margin: 2% auto;
+    background-image: url(../lab-2/puppy-image/puppy-2.jpg);
+}
+footer, .push{
+    height: 30px;
+}
+.magic-box{
+    display: none;
+}
+@media (min-width: 768px) {
+    .paragraph-container {
+        display: flex;
+    }
+    .paragraph-container .paragraph2{
+        display: none;
+    }
+    .image-conatiner{
+        display: flex;
+        width: 950px;
+        margin: 0 auto;
+    }
+    .image2 {
+        background-image: url(../lab-2/puppy-image/puppy-3.jpg);
+    }
+}
+@media (min-width: 1025px) {
+    .paragraph-container .paragraph2 {
+        display: block;
+    }
+    .paragraph{
+        color: aliceblue;
+        background-color: green;
+        border-radius: 12px;
+        padding: 5px;
+    }
+    .magic-box{
+        display: flex;
+        margin: 0 auto;
+        width: 950px;
+        font-size: 35px;
+        text-align: center;
+    }
+    .magic-box p{
+        display: none;
+    }
+    .magic-box1{
+        background-color: orange;
+        width: 310px;
+        height: 310px;
+        margin: 2% auto;
+    }
+    .magic-box2{
+        background-color: lime;
+        width: 310px;
+        height: 310px;
+        margin: 2% auto;
+    }
+    .magic-box1:hover p, .magic-box2:hover p{
+        display: block;
+        padding: 50px;
+    }
+    .paragraph-container{
+        width: 950px;
+        margin: 0 auto;
+    }
+}
