@@ -20,15 +20,13 @@
 }
 
 .container1{
-    display: flex;
-    width: 80%;
-    margin-left: 10%;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 40px;
 }
 .container2{
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-    margin-left: 10%;
+    width: 60%;
+    margin-left: 20%;
 }
 .puppy1{
     
@@ -39,31 +37,88 @@ img{
     width: 100%;
 }
 .puppymissing{
-    background-color: #ee4d65;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 33%;
-    font-size: 70px;
+    display: none;
 }
-.puppy1{
-    width: 33%;
-}
-.puppy2{
-    width: 33%;
-}
+
 .morepuppy{
     text-align: center;
     width: 80%;
     font-size: 30px;
     margin: 30px 10%;
 }
-.puppymissing p{
-    padding: 30px;
-    text-align: center;
+.puppy-bottom{
+    margin-bottom: 20px
 }
-.puppy4{
-    margin-right: 2%;
-}
-.puppy5{
-    margin-left: 2%;
+
+@media (min-width: 768px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .firstsec{
+        margin-bottom: 20px;
+    }
+    .bg{
+        background-color: rgb(67, 67, 145);
+        text-align: center;
+        padding: 10px;
+        color: #fff;
+        font-weight:500;
+        font-size: larger;
+        font-weight: bolder;
+    }
+    .footer{
+        margin-top: 20px;
+        padding: 20px;
+    }
+    
+    .container1{
+        display: flex;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .container2{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        margin-left: 10%;
+    }
+    .puppy1{
+        
+        top: 10px;
+        left: 10px;
+    }
+    img{
+        width: 100%;
+    }
+    .puppymissing{
+        display: block;
+        background-color: #ee4d65;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 33%;
+        font-size: 3em;
+    }
+    .puppy1{
+        width: 33%;
+    }
+    .puppy2{
+        width: 33%;
+    }
+    .morepuppy{
+        text-align: center;
+        width: 80%;
+        font-size: 30px;
+        margin: 30px 10%;
+    }
+    .puppymissing p{
+        padding: 30px;
+        text-align: center;
+    }
+    .puppy4{
+        margin-right: 2%;
+    }
+    .puppy5{
+        margin-left: 2%;
+    }
 }
