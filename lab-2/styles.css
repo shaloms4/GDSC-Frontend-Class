@@ -36,13 +36,14 @@
     left: 10px;
 }
 img{
-    max-width: 100%;
+    width: 100%;
 }
 .puppymissing{
     background-color: #ee4d65;
     margin-left: 10px;
     margin-right: 10px;
     width: 33%;
+    font-size: 70px;
 }
 .puppy1{
     width: 33%;
