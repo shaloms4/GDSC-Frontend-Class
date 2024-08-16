@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Increment/Decrement and Color Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="color-selector">
+        <label><input type="radio" name="color" value="White"> White</label>
+        <label><input type="radio" name="color" value="blue"> Blue</label>
+        <label><input type="radio" name="color" value="green"> Green</label>
+        <label><input type="radio" name="color" value="purple"> Purple</label>
+        <label><input type="radio" name="color" value="yellow"> Yellow</label>
+    </div>
+    <div class="counter">
+        <button id="decrement">-</button>
+        <span id="count">0</span>
+        <button id="increment">+</button>
+    </div>
+    <div id="login-form">
+        <h1>Login</h1>
+        <form id="form">
+            <input type="text" id="fullname" placeholder="User Full Name" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="message" style="display: none;">Form submitted</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
